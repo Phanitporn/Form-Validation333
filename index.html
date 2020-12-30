@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำร้องขอลาพักการศึกษา</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+
+    <div class="container ">
+        <img src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+            width="100" height="100" class="mx-auto d-block" alt="">
+
+        <div class="row">
+
+            <h1 class="text-center">คำร้องขอลาพักการศึกษา</h1>
+            <div class="col text-center">(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <ul class="d-flex justify-content-md-end">เขียนที่ มหาวิทยาลัยแม่โจ้</ul> <br>
+            <div class="d-flex justify-content-md-end">
+                <span class="mx-1"> วันที่ </span> <input type="date">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <p class="font-weight-bold "></p>
+            <ul>เรื่อง ขอพักการศึกษา ในภาคเรียนที่
+                <select id="inputState" class=" ">
+                    <option selected>ภาคเรียน</option>
+                    <option>ภาคเรียนที่ 1</option>
+                    <option>ภาคเรียนที่ 2</option>
+                </select>
+                ปีการศึกษา
+                <select id="inputState" class="">
+                    <option selected>ปีการศึกษา</option>
+                    <option>ภาคเรียนที่ 1</option>
+                    <option>ภาคเรียนที่ 2</option>
+                </select>
+            </ul>
+            <ul>เรียน คณบดีคณะ
+                <select id="inputState" class="">
+                    <option selected>คณบดีคณะ</option>
+                    <option>คณบดีคณะพัฒนาการท่องเที่ยว</option>
+                    <option>คณบดีคณะเศษฐศาสตร์</option>
+                    <option>คณบดีคณะศิลปศาสตร์</option>
+                    <option>คณบดีคณะบริหารธุรกิจ</option>
+                    <option>คณบดีคณะเทคโนโลยีการประมง
+                        และทรัพยากรทางน้ำ</option>
+                    <option>คณบดีคณะวิทยาศาสตร์</option>
+                    <option>คณบดีคณะผลิตกรรมการเกษตร</option>
+                    <option>คณบดีคณะวิศวกรรม
+                        และอุตสาหกรรมเกษตร</option>
+                    <option>คณบดีคณะสถาปัตยกรรมศาสตร์
+                        และการออกแบบสิ่งแวดล้อม</option>
+                    <option>คณบดีคณะสัตวศาสตร์และเทคโนโลยี</option>
+                    <option>คณบดีคณะสารสนเทศและการสื่อสาร</option>
+                </select>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <ul class="col-md-4 mx-5"> ข้าพเจ้า
+
+                <div class=" form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">นาย</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">นาง</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">นางสาว</label>
+                </div>
+
+                <!-- <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          นาย
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+                        <label class="form-check-label" for="defaultCheck2">
+                          นาง
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+                        <label class="form-check-label" for="defaultCheck2">
+                          นางสาว
+                        </label>
+                      </div> -->
+
+                ชื่อ-นามสกุล
+                
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="ชื่อ">
+                        </div>
+                        
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="นามสกุล">
+                        </div>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <label for="input" class="col-sm-2 col-form-label">รหัสนักศึกษา (10หลัก)</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="input" placeholder="รหัสนักศึกษา">
+            </div>
+
+            <label for="input" class="col-sm-2 col-form-label">โทรศัพท์มือถือ (10หลัก)</label>
+
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="input" placeholder="โทรศัพท์มือถือ">
+            </div>
+
+            <small id="" class="col-sm-2 form-text text-muted">โปรดระบุ</small>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <ul> หลักสูตร ปริญญาตรี
+
+                <div class=" form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">4-5 ปี</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">4 ปีเทียบเข้าเรียน (2ปี)</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">ภาคปกติ</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3">ภาคสมทบ</label>
+                </div>
+            </ul>
+        </div>
+
+        <div class="row">
+            <ul>
+                สาขาวิชา
+
+
+                คณะ <select id="inputState" class="">
+                    <option selected>คณะ</option>
+                    <option>คณะพัฒนาการท่องเที่ยว</option>
+                    <option>คณะเศษฐศาสตร์</option>
+                    <option>คณะศิลปศาสตร์</option>
+                    <option>คณะบริหารธุรกิจ</option>
+                    <option>คณะเทคโนโลยีการประมง
+                        และทรัพยากรทางน้ำ</option>
+                    <option>คณะวิทยาศาสตร์</option>
+                    <option>คณะผลิตกรรมการเกษตร</option>
+                    <option>คณะวิศวกรรม
+                        และอุตสาหกรรมเกษตร</option>
+                    <option>คณะสถาปัตยกรรมศาสตร์
+                        และการออกแบบสิ่งแวดล้อม</option>
+                    <option>คณะสัตวศาสตร์และเทคโนโลยี</option>
+                    <option>คณะสารสนเทศและการสื่อสาร</option>
+                </select>
+            </ul>
+
+
+
+        </div>
+
+        <div class="row">
+            <ul>
+                มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก
+            </ul>
+            <ul>
+                พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย์ / เอกสารอื่นๆ
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFileLangHTML">
+                    <label class="custom-file-label" for="customFileLangHTML" data-browse="Bestand kiezen"></label>
+                </div>
+            </ul>
+
+        </div>
+        <ul>จึงเรียนมาเพื่อโปรดพิจารณา</ul>
+        <ul class="text-center">ขอแสดงความนับถือ</ul>
+        <div class="row">
+            <div class=" d-flex justify-content-around align-self-md-end custom-file text-center mx-5 ">
+
+                <input type="file" class="custom-file-input" id="customFileLangHTML">
+                <label class="custom-file-label" for="customFileLangHTML" data-browse="Bestand kiezen"></label>
+            </div> 
+            <br>
+            
+            <p class="text-center">
+                นักศึกษา</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

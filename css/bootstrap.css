@@ -11,6 +11,24 @@
     margin-right:auto;
     align-content: center; 
   } */
+    
+.content-grid {
+  max-width: 960px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  border: 1px solid #333;
+}
+.sevice-grid {
+  border: 1px solid #333;
+  padding: 20px;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

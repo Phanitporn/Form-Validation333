@@ -20,7 +20,7 @@
 
     <div class="container ">
         <img src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
-            width="100" height="100" class="mx-auto d-block" alt="">
+            width="60" height="60" class="my-3" alt="">
 
         <div class="row">
 
@@ -121,15 +121,15 @@
                       </div> -->
 
                 ชื่อ-นามสกุล
-                
+
                 <form>
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="ชื่อ">
+                            <input type="text" class="col-2 form-control is-invalid" placeholder="ชื่อ">
                         </div>
-                        
+
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="นามสกุล">
+                            <input type="text" class="col-2 form-control is-invalid" placeholder="นามสกุล">
                         </div>
                     </div>
                 </form>
@@ -139,15 +139,21 @@
 
     <div class="container">
         <div class="row">
+            <!-- <div class="col align-self-start">
+                <div class="cpl">
+            <h6>รหัสนักศึกษา (10หลัก) <input type="text" class="form-control is-invalid" required></h6>
+                </div>
+            </div> -->
+
             <label for="input" class="col-sm-2 col-form-label">รหัสนักศึกษา (10หลัก)</label>
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="input" placeholder="รหัสนักศึกษา">
+                <input type="text" class="col-2 form-control is-invalid" id="input" placeholder="รหัสนักศึกษา">
             </div>
 
             <label for="input" class="col-sm-2 col-form-label">โทรศัพท์มือถือ (10หลัก)</label>
 
             <div class="col-sm-2">
-                <input type="text" class="form-control" id="input" placeholder="โทรศัพท์มือถือ">
+                <input type="text" class="col-2 form-control is-invalid" id="input" placeholder="โทรศัพท์มือถือ">
             </div>
 
             <small id="" class="col-sm-2 form-text text-muted">โปรดระบุ</small>
@@ -230,15 +236,61 @@
 
                 <input type="file" class="custom-file-input" id="customFileLangHTML">
                 <label class="custom-file-label" for="customFileLangHTML" data-browse="Bestand kiezen"></label>
-            </div> 
+            </div>
             <br>
-            
-            <p class="text-center">
-                นักศึกษา</p>
+
+            <div class="col-sm-2">
+                <input type="text" class="form-control text-right" id="input" placeholder="">
+
+            </div> <br>
+            <p class="text-center">นักศึกษา</p>
+
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <span class="border border-dark"></span>
 
+            <p>(2) ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                </label>
+            </div>
+            <div class=" form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">ภาคเรียนที่ 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">ภาคเรียนที่ 2</label>
+            </div>
+
+            <ul class="">ขอแสดงความนับถือ</ul>
+            <div class="row">
+                <div class="  ">
+                    <input type="file" class="custom-file-input" id="customFileLangHTML">
+                    <label class="custom-file-label" for="customFileLangHTML" data-browse="Bestand kiezen"></label>
+                </div>
+                <br>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control text-right" id="input" placeholder="">
+
+                </div> <br>
+                <p class="text">หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</p>
+                <div class="">
+                    <span class="mx-1"> วันที่ </span> <input type="date">
+                </div>
+
+                <span class="border border-dark"></span>
+            </div>
+        </div>
+
+    </div>
 
 
 
